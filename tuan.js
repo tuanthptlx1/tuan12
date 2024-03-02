@@ -140,8 +140,8 @@ function logoutUser() {
   }
   
   button:hover:before {
-    width: 115%;
-    height: 115%;
+    width: 50%;
+    height: 50%;
   }
     #loggedInContent {
         text-align: center;
