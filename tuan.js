@@ -81,7 +81,7 @@ function logoutUser() {
         margin-bottom: 5px;
     }
     
-    input, button {
+    input{
         margin-bottom: 10px;
         padding: 10px;
     }
