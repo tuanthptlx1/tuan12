@@ -164,14 +164,15 @@ const html = `<!DOCTYPE html>
         <label for="password">Mật khẩu:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit" class="bn29">Đăng Nhập</button>
+        <button type="submit" >Đăng Nhập</button>
+        <a href="/"><button class="bn29">Button</button></a>
     </form>
 </div>
 
 <div id="loggedInContent" style="display: none;">
     <!-- Nội dung sau khi đăng nhập sẽ được hiển thị ở đây -->
     <p>Xin chào, <span id="loggedInUser"></span>!</p>
-    <button onclick="logoutUser()" class="bn29">Đăng Xuất</button>
+    <button onclick="logoutUser()">Đăng Xuất</button>
 </div>
 </section>
 <script src="script.js"></script>
