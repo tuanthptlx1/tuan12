@@ -82,7 +82,7 @@ const html = `<!DOCTYPE html>
     border: none;
 }
 
-button:hover {
+    button:hover {
     background-color: #2980b9;
 }
     }
@@ -165,7 +165,6 @@ button:hover {
         <input type="password" id="password" name="password" required>
 
         <button type="submit" class="bn29" >Đăng Nhập</button>
-        <a href="https://www.youtube.com/"></a>
     </form>
 </div>
 
