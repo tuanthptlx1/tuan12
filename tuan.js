@@ -154,7 +154,7 @@ function logoutUser() {
 <header>
 <h1> XIN CHAO</h1>
 </header>
-
+<section>
 <div id="loginForm">
     <h2>Đăng Nhập</h2>
     <form onsubmit="return loginUser()">
@@ -173,6 +173,7 @@ function logoutUser() {
     <p>Xin chào, <span id="loggedInUser"></span>!</p>
     <button onclick="logoutUser()" class="bn29">Đăng Xuất</button>
 </div>
+</section>
 <script src="script.js"></script>
     
 </body>
