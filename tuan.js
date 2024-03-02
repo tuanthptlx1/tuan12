@@ -76,16 +76,6 @@ function logoutUser() {
         margin-bottom: 10px;
         padding: 10px;
     }
-    button {
-    cursor: pointer;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-}
-
-    button:hover {
-    background-color: #2980b9;
-}
     }
     .bn29 {
     border: none;
