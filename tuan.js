@@ -54,6 +54,7 @@ function logoutUser() {
     </script>
     <style>
     body {
+        background-color:blue:
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
