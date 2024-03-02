@@ -22,18 +22,17 @@ const html = `<!DOCTYPE html>
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
-    if (username === 'user' && password === 'password') {
-        document.getElementById('loggedInContent').style.display = 'block';
-        document.getElementById('loggedInUser').innerText = username;
-
-        document.getElementById('loginForm').style.display = 'none';
-
-        return false;
-    } else {
-        alert('Đăng nhập không thành công. Vui lòng kiểm tra tên người dùng và mật khẩu.');
-        return false;
-    }
-}
+   if (username === "admin" && password === "password") {
+                messageElement.innerText = "";
+                messageElement.classList.remove("error");
+                window.alert("Login successful!");
+   
+            } else {
+                messageElement.innerText = "";
+                messageElement.classList.add("error");
+                window.alert("Login error!");
+            }
+        });
 
 function logoutUser() {
     document.getElementById('loggedInContent').style.display = 'none';
