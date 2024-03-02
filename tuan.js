@@ -86,7 +86,63 @@ const html = `<!DOCTYPE html>
     button:hover {
         background-color: #2980b9;
     }
-    
+    .bn29 {
+    border: none;
+    padding: 0.8em 2.5em;
+    outline: none;
+    color: white;
+    font-style: 1.2em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+  }
+  
+  .bn29:before,
+  .bn29:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+  }
+  
+  .bn29:before {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+    animation: pulse 10s infinite ease;
+  }
+  
+  .bn29:after {
+    -webkit-filter: blur(0.3px);
+    filter: blur(0.3px);
+  }
+  
+  .bn29:hover:before {
+    width: 115%;
+    height: 115%;
+  }
     #loggedInContent {
         text-align: center;
     }
@@ -108,14 +164,14 @@ const html = `<!DOCTYPE html>
         <label for="password">Mật khẩu:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Đăng Nhập</button>
+        <button type="submit" class="bn29">Đăng Nhập</button>
     </form>
 </div>
 
 <div id="loggedInContent" style="display: none;">
     <!-- Nội dung sau khi đăng nhập sẽ được hiển thị ở đây -->
     <p>Xin chào, <span id="loggedInUser"></span>!</p>
-    <button onclick="logoutUser()">Đăng Xuất</button>
+    <button onclick="logoutUser()" class="bn29">Đăng Xuất</button>
 </div>
 </section>
 <script src="script.js"></script>
