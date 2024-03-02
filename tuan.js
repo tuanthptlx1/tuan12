@@ -86,7 +86,7 @@ function logoutUser() {
         padding: 10px;
     }
     }
-    .bn29 {
+    button {
     border: none;
     padding: 0.8em 2.5em;
     outline: none;
@@ -99,8 +99,8 @@ function logoutUser() {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
   }
   
-  .bn29:before,
-  .bn29:after {
+  button:before,
+  button:after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -125,7 +125,7 @@ function logoutUser() {
     );
   }
   
-  .bn29:before {
+  button:before {
     -webkit-filter: blur(7px);
     filter: blur(7px);
     -webkit-transition: all 0.25s ease;
@@ -134,12 +134,12 @@ function logoutUser() {
     animation: pulse 10s infinite ease;
   }
   
-  .bn29:after {
+  button:after {
     -webkit-filter: blur(0.3px);
     filter: blur(0.3px);
   }
   
-  .bn29:hover:before {
+  button:hover:before {
     width: 115%;
     height: 115%;
   }
@@ -163,14 +163,14 @@ function logoutUser() {
         <label for="password">Mật khẩu:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit" class="bn29" >Đăng Nhập</button>
+        <button type="submit" >Đăng Nhập</button>
     </form>
 </div>
 
 <div id="loggedInContent" style="display: none;">
     <!-- Nội dung sau khi đăng nhập sẽ được hiển thị ở đây -->
     <p>Xin chào, <span id="loggedInUser"></span>!</p>
-    <button onclick="logoutUser()" class="bn29">Đăng Xuất</button>
+    <button onclick="logoutUser()" >Đăng Xuất</button>
 </div>
 </section>
 <script src="script.js"></script>
