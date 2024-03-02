@@ -75,16 +75,6 @@ const html = `<!DOCTYPE html>
         margin-bottom: 10px;
         padding: 10px;
     }
-    
-    button {
-        cursor: pointer;
-        background-color: #3498db;
-        color: #fff;
-        border: none;
-    }
-    
-    button:hover {
-        background-color: #2980b9;
     }
     .bn29 {
     border: none;
@@ -164,15 +154,14 @@ const html = `<!DOCTYPE html>
         <label for="password">Mật khẩu:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit" >Đăng Nhập</button>
-        <a href="/"><button class="bn29">Button</button></a>
+        <button type="submit" class="bn29" >Đăng Nhập</button>
     </form>
 </div>
 
 <div id="loggedInContent" style="display: none;">
     <!-- Nội dung sau khi đăng nhập sẽ được hiển thị ở đây -->
     <p>Xin chào, <span id="loggedInUser"></span>!</p>
-    <button onclick="logoutUser()">Đăng Xuất</button>
+    <button onclick="logoutUser()" class="bn29">Đăng Xuất</button>
 </div>
 </section>
 <script src="script.js"></script>
