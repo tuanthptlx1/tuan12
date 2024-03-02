@@ -8,7 +8,17 @@ const server = app.listen(port, () => console.log(`Example app listening on port
 
 server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
-function loginUser() {
+
+
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function loginUser() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
 
@@ -32,15 +42,7 @@ function logoutUser() {
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
 }
-
-
-const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    </script>
     <style>
     body {
         background-color:blue;
